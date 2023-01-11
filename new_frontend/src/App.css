@@ -1,0 +1,131 @@
+.App {
+    text-align: center;
+  }
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .slider {
+    position: relative;
+    height: flex;
+    justify-content: right;
+    align-items: right;
+    margin-top: 2em;
+  }
+  
+  
+  .image {
+    width: 200;
+    height: 500px;
+    border-radius: 50px;
+    align-items: center;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: gold;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: gold;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  
+  }
+  
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ee7752;
+    border: solid white;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 10px;
+    padding: 3px;
+  }
+  
+  .navbar_link {
+    text-decoration: none;
+    border: solid black;
+    padding: 3px;
+    background-color: gray;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .mainDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+  }
