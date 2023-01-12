@@ -1,6 +1,6 @@
 export const SliderData = [
     {
-        image: 'https://images.computerhistory.org/babbage/5-7-1.jpg',
+        image: 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTgwODI5OTMyNDQyNjI1Mzg0/gettyimages-3066352.jpg',
         name: 'Ada Lovelace'
     },
     {

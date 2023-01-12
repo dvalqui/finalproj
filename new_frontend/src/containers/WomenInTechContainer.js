@@ -6,6 +6,7 @@ import { SliderData } from '../components/SliderData';
 import Woman from "../components/Woman";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "../components/About";
+import Resources from "../components/Resources";
 
 function WomenInTechContainer() {
     const [women, setWomen] = useState([])
@@ -39,6 +40,8 @@ function WomenInTechContainer() {
                         <Route exact path="/list" element={<WomenList women={women} />} />
                         <Route exact path="/selected" element={<Woman selectedWoman={selectedWoman} />} />
                         <Route exact path="/about" element={<About />} />
+                        <Route exact path="/resources" element={<Resources />} />
+
 
 
                     </Routes>

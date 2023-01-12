@@ -12,9 +12,13 @@ const Woman = ({ selectedWoman }) => {
         return (
             <>
                 <h1>{selectedWoman.name}</h1>
+                <h2>{selectedWoman.dob}</h2>
                 <p>
                     Short bio: {selectedWoman.bio}
                 </p>
+                {/* <p>
+                    Publications: {selectedWoman.publications}
+                </p> */}
                 <img src={slide.image} className='image' />
 
             </>

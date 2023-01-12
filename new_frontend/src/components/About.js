@@ -4,8 +4,10 @@ import dahliavibes from "./dahliavibes.jpeg";
 const About = () => {
 
     return (
-        <div className="about"><h1>About the Creator</h1>
-            <div className="dahliapic"></div><img src={dahliavibes} />
+        <about className="about">
+            <h1 classname="title">About the Creator</h1>
+
+
             <p>Hello, I'm Dahlia! I am a former Women's and Gender Studies professor-turned-
                 software developer. After 15 years in academia, an international move, a pandemic, and a baby,
                 I decided it was time for a career change. I have always loved logic, critical thinking, and
@@ -21,7 +23,10 @@ const About = () => {
                 to you for the enhancement of all to enter into the tech field, no matter one's background,
                 age, or parent-status. Because being a parent and doing anything else at all is hard.
             </p>
-        </div>
+            <img src={dahliavibes} className="dahliapic" />
+
+        </about>
+
 
     );
 }
